@@ -18,6 +18,7 @@
 		635AE16A1D3CA028004709C2 /* Copernicus-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1671D3CA028004709C2 /* Copernicus-Book.otf */; };
 		635AE16B1D3CA028004709C2 /* Copernicus-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */; };
 		635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */; };
+		752470441B9CFDE42AF6E1F9 /* Pods_AnArmyOfOnes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		635AE1671D3CA028004709C2 /* Copernicus-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-Book.otf"; path = "Resources/Copernicus-Book.otf"; sourceTree = "<group>"; };
 		635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-BookItalic.otf"; path = "Resources/Copernicus-BookItalic.otf"; sourceTree = "<group>"; };
 		635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = huge_agb_v5.ttf; path = Resources/huge_agb_v5.ttf; sourceTree = "<group>"; };
+		AB5E62AFE32D91D5749702FC /* Pods-AnArmyOfOnes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.debug.xcconfig"; sourceTree = "<group>"; };
+		F13EFA2AA9F050C8C4A94F39 /* Pods-AnArmyOfOnes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.release.xcconfig"; sourceTree = "<group>"; };
+		F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnArmyOfOnes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752470441B9CFDE42AF6E1F9 /* Pods_AnArmyOfOnes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				635AE1481D3C6997004709C2 /* AnArmyOfOnes */,
 				635AE1471D3C6997004709C2 /* Products */,
+				6E511D8A6EB115C2B23A2650 /* Pods */,
+				650D28F2E95501C6C8F59ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,23 @@
 			name = ModelResources;
 			sourceTree = "<group>";
 		};
+		650D28F2E95501C6C8F59ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E511D8A6EB115C2B23A2650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB5E62AFE32D91D5749702FC /* Pods-AnArmyOfOnes.debug.xcconfig */,
+				F13EFA2AA9F050C8C4A94F39 /* Pods-AnArmyOfOnes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 635AE1581D3C6997004709C2 /* Build configuration list for PBXNativeTarget "AnArmyOfOnes" */;
 			buildPhases = (
+				837D0FE57C184941A23BC4DE /* [CP] Check Pods Manifest.lock */,
 				635AE1421D3C6997004709C2 /* Sources */,
 				635AE1431D3C6997004709C2 /* Frameworks */,
 				635AE1441D3C6997004709C2 /* Resources */,
+				1CE21DFDCCB9733D68B7049E /* [CP] Embed Pods Frameworks */,
+				C10CB9ACEF7655A080FFC610 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CE21DFDCCB9733D68B7049E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837D0FE57C184941A23BC4DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C10CB9ACEF7655A080FFC610 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		635AE1421D3C6997004709C2 /* Sources */ = {
@@ -317,6 +392,7 @@
 		};
 		635AE1591D3C6997004709C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5E62AFE32D91D5749702FC /* Pods-AnArmyOfOnes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnArmyOfOnes/Info.plist;
@@ -328,6 +404,7 @@
 		};
 		635AE15A1D3C6997004709C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13EFA2AA9F050C8C4A94F39 /* Pods-AnArmyOfOnes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnArmyOfOnes/Info.plist;
@@ -356,6 +433,7 @@
 				635AE15A1D3C6997004709C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
