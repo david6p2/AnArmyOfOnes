@@ -18,6 +18,7 @@
 		635AE16A1D3CA028004709C2 /* Copernicus-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1671D3CA028004709C2 /* Copernicus-Book.otf */; };
 		635AE16B1D3CA028004709C2 /* Copernicus-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */; };
 		635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */; };
+		635AE16E1D3CA700004709C2 /* FixerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE16D1D3CA700004709C2 /* FixerRouter.swift */; };
 		752470441B9CFDE42AF6E1F9 /* Pods_AnArmyOfOnes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		635AE1671D3CA028004709C2 /* Copernicus-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-Book.otf"; path = "Resources/Copernicus-Book.otf"; sourceTree = "<group>"; };
 		635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-BookItalic.otf"; path = "Resources/Copernicus-BookItalic.otf"; sourceTree = "<group>"; };
 		635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = huge_agb_v5.ttf; path = Resources/huge_agb_v5.ttf; sourceTree = "<group>"; };
+		635AE16D1D3CA700004709C2 /* FixerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixerRouter.swift; path = Model/FixerRouter.swift; sourceTree = "<group>"; };
 		AB5E62AFE32D91D5749702FC /* Pods-AnArmyOfOnes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.debug.xcconfig"; sourceTree = "<group>"; };
 		F13EFA2AA9F050C8C4A94F39 /* Pods-AnArmyOfOnes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.release.xcconfig"; sourceTree = "<group>"; };
 		F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnArmyOfOnes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				635AE1641D3C791A004709C2 /* ModelResources */,
 				635AE1601D3C727D004709C2 /* Currency.swift */,
 				635AE1651D3C84BD004709C2 /* RateConvertion.swift */,
+				635AE16D1D3CA700004709C2 /* FixerRouter.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				635AE1611D3C727D004709C2 /* Currency.swift in Sources */,
 				635AE14C1D3C6997004709C2 /* ViewController.swift in Sources */,
+				635AE16E1D3CA700004709C2 /* FixerRouter.swift in Sources */,
 				635AE1661D3C84BD004709C2 /* RateConvertion.swift in Sources */,
 				635AE14A1D3C6997004709C2 /* AppDelegate.swift in Sources */,
 			);
