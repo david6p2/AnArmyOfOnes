@@ -19,8 +19,19 @@
 		635AE16B1D3CA028004709C2 /* Copernicus-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */; };
 		635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */; };
 		635AE16E1D3CA700004709C2 /* FixerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE16D1D3CA700004709C2 /* FixerRouter.swift */; };
+		635AE1761D3D6C63004709C2 /* AnArmyOfOnesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE1751D3D6C63004709C2 /* AnArmyOfOnesTests.swift */; };
 		752470441B9CFDE42AF6E1F9 /* Pods_AnArmyOfOnes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		635AE1781D3D6C63004709C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635AE13E1D3C6997004709C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 635AE1451D3C6997004709C2;
+			remoteInfo = AnArmyOfOnes;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		635AE1461D3C6997004709C2 /* AnArmyOfOnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnArmyOfOnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +48,9 @@
 		635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-BookItalic.otf"; path = "Resources/Copernicus-BookItalic.otf"; sourceTree = "<group>"; };
 		635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = huge_agb_v5.ttf; path = Resources/huge_agb_v5.ttf; sourceTree = "<group>"; };
 		635AE16D1D3CA700004709C2 /* FixerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixerRouter.swift; path = Model/FixerRouter.swift; sourceTree = "<group>"; };
+		635AE1731D3D6C63004709C2 /* AnArmyOfOnesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnArmyOfOnesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		635AE1751D3D6C63004709C2 /* AnArmyOfOnesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnArmyOfOnesTests.swift; sourceTree = "<group>"; };
+		635AE1771D3D6C63004709C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5E62AFE32D91D5749702FC /* Pods-AnArmyOfOnes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.debug.xcconfig"; sourceTree = "<group>"; };
 		F13EFA2AA9F050C8C4A94F39 /* Pods-AnArmyOfOnes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnArmyOfOnes.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnArmyOfOnes/Pods-AnArmyOfOnes.release.xcconfig"; sourceTree = "<group>"; };
 		F73532050EC9EB24E58E0940 /* Pods_AnArmyOfOnes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnArmyOfOnes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +65,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		635AE1701D3D6C63004709C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				635AE1481D3C6997004709C2 /* AnArmyOfOnes */,
+				635AE1741D3D6C63004709C2 /* AnArmyOfOnesTests */,
 				635AE1471D3C6997004709C2 /* Products */,
 				6E511D8A6EB115C2B23A2650 /* Pods */,
 				650D28F2E95501C6C8F59ECB /* Frameworks */,
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				635AE1461D3C6997004709C2 /* AnArmyOfOnes.app */,
+				635AE1731D3D6C63004709C2 /* AnArmyOfOnesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +163,15 @@
 			name = ModelResources;
 			sourceTree = "<group>";
 		};
+		635AE1741D3D6C63004709C2 /* AnArmyOfOnesTests */ = {
+			isa = PBXGroup;
+			children = (
+				635AE1751D3D6C63004709C2 /* AnArmyOfOnesTests.swift */,
+				635AE1771D3D6C63004709C2 /* Info.plist */,
+			);
+			path = AnArmyOfOnesTests;
+			sourceTree = "<group>";
+		};
 		650D28F2E95501C6C8F59ECB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +212,24 @@
 			productReference = 635AE1461D3C6997004709C2 /* AnArmyOfOnes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		635AE1721D3D6C63004709C2 /* AnArmyOfOnesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635AE17C1D3D6C63004709C2 /* Build configuration list for PBXNativeTarget "AnArmyOfOnesTests" */;
+			buildPhases = (
+				635AE16F1D3D6C63004709C2 /* Sources */,
+				635AE1701D3D6C63004709C2 /* Frameworks */,
+				635AE1711D3D6C63004709C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				635AE1791D3D6C63004709C2 /* PBXTargetDependency */,
+			);
+			name = AnArmyOfOnesTests;
+			productName = AnArmyOfOnesTests;
+			productReference = 635AE1731D3D6C63004709C2 /* AnArmyOfOnesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +242,10 @@
 				TargetAttributes = {
 					635AE1451D3C6997004709C2 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					635AE1721D3D6C63004709C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 635AE1451D3C6997004709C2;
 					};
 				};
 			};
@@ -209,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				635AE1451D3C6997004709C2 /* AnArmyOfOnes */,
+				635AE1721D3D6C63004709C2 /* AnArmyOfOnesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +280,13 @@
 				635AE1511D3C6997004709C2 /* Assets.xcassets in Resources */,
 				635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */,
 				635AE14F1D3C6997004709C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635AE1711D3D6C63004709C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +353,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		635AE16F1D3D6C63004709C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635AE1761D3D6C63004709C2 /* AnArmyOfOnesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		635AE1791D3D6C63004709C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 635AE1451D3C6997004709C2 /* AnArmyOfOnes */;
+			targetProxy = 635AE1781D3D6C63004709C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		635AE14D1D3C6997004709C2 /* Main.storyboard */ = {
@@ -418,6 +496,30 @@
 			};
 			name = Release;
 		};
+		635AE17A1D3D6C63004709C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.AnArmyOfOnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnArmyOfOnes.app/AnArmyOfOnes";
+			};
+			name = Debug;
+		};
+		635AE17B1D3D6C63004709C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AnArmyOfOnesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lsrmarketingservice.AnArmyOfOnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnArmyOfOnes.app/AnArmyOfOnes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,6 +540,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		635AE17C1D3D6C63004709C2 /* Build configuration list for PBXNativeTarget "AnArmyOfOnesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635AE17A1D3D6C63004709C2 /* Debug */,
+				635AE17B1D3D6C63004709C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
