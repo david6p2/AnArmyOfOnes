@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (3.1.5)
+  - SwiftDate (3.0.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1.2)
+  - SwiftDate (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+
+PODFILE CHECKSUM: dd770e92a9993d164cfde39d5bf326c5b2b430c8
+
+COCOAPODS: 1.0.1
