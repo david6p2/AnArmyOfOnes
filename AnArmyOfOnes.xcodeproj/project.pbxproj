@@ -12,6 +12,12 @@
 		635AE14F1D3C6997004709C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635AE14D1D3C6997004709C2 /* Main.storyboard */; };
 		635AE1511D3C6997004709C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1501D3C6997004709C2 /* Assets.xcassets */; };
 		635AE1541D3C6997004709C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1521D3C6997004709C2 /* LaunchScreen.storyboard */; };
+		635AE1611D3C727D004709C2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE1601D3C727D004709C2 /* Currency.swift */; };
+		635AE1631D3C736D004709C2 /* Currency.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1621D3C736D004709C2 /* Currency.xcassets */; };
+		635AE1661D3C84BD004709C2 /* RateConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AE1651D3C84BD004709C2 /* RateConvertion.swift */; };
+		635AE16A1D3CA028004709C2 /* Copernicus-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1671D3CA028004709C2 /* Copernicus-Book.otf */; };
+		635AE16B1D3CA028004709C2 /* Copernicus-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */; };
+		635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		635AE1501D3C6997004709C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635AE1531D3C6997004709C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		635AE1551D3C6997004709C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635AE1601D3C727D004709C2 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = Model/Currency.swift; sourceTree = "<group>"; };
+		635AE1621D3C736D004709C2 /* Currency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Currency.xcassets; sourceTree = "<group>"; };
+		635AE1651D3C84BD004709C2 /* RateConvertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RateConvertion.swift; path = Model/RateConvertion.swift; sourceTree = "<group>"; };
+		635AE1671D3CA028004709C2 /* Copernicus-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-Book.otf"; path = "Resources/Copernicus-Book.otf"; sourceTree = "<group>"; };
+		635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Copernicus-BookItalic.otf"; path = "Resources/Copernicus-BookItalic.otf"; sourceTree = "<group>"; };
+		635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = huge_agb_v5.ttf; path = Resources/huge_agb_v5.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,68 @@
 		635AE1481D3C6997004709C2 /* AnArmyOfOnes */ = {
 			isa = PBXGroup;
 			children = (
-				635AE1491D3C6997004709C2 /* AppDelegate.swift */,
-				635AE14B1D3C6997004709C2 /* ViewController.swift */,
-				635AE14D1D3C6997004709C2 /* Main.storyboard */,
+				635AE15C1D3C69D3004709C2 /* Resources */,
+				635AE15B1D3C69C8004709C2 /* App */,
 				635AE1501D3C6997004709C2 /* Assets.xcassets */,
-				635AE1521D3C6997004709C2 /* LaunchScreen.storyboard */,
+				635AE1621D3C736D004709C2 /* Currency.xcassets */,
 				635AE1551D3C6997004709C2 /* Info.plist */,
 			);
 			path = AnArmyOfOnes;
+			sourceTree = "<group>";
+		};
+		635AE15B1D3C69C8004709C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				635AE1491D3C6997004709C2 /* AppDelegate.swift */,
+				635AE15D1D3C69F7004709C2 /* Model */,
+				635AE15E1D3C69FE004709C2 /* Storyboards */,
+				635AE15F1D3C6A0D004709C2 /* VC */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		635AE15C1D3C69D3004709C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				635AE1671D3CA028004709C2 /* Copernicus-Book.otf */,
+				635AE1681D3CA028004709C2 /* Copernicus-BookItalic.otf */,
+				635AE1691D3CA028004709C2 /* huge_agb_v5.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		635AE15D1D3C69F7004709C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				635AE1641D3C791A004709C2 /* ModelResources */,
+				635AE1601D3C727D004709C2 /* Currency.swift */,
+				635AE1651D3C84BD004709C2 /* RateConvertion.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		635AE15E1D3C69FE004709C2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				635AE14D1D3C6997004709C2 /* Main.storyboard */,
+				635AE1521D3C6997004709C2 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		635AE15F1D3C6A0D004709C2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				635AE14B1D3C6997004709C2 /* ViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		635AE1641D3C791A004709C2 /* ModelResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635AE1631D3C736D004709C2 /* Currency.xcassets in Resources */,
 				635AE1541D3C6997004709C2 /* LaunchScreen.storyboard in Resources */,
+				635AE16A1D3CA028004709C2 /* Copernicus-Book.otf in Resources */,
+				635AE16B1D3CA028004709C2 /* Copernicus-BookItalic.otf in Resources */,
 				635AE1511D3C6997004709C2 /* Assets.xcassets in Resources */,
+				635AE16C1D3CA028004709C2 /* huge_agb_v5.ttf in Resources */,
 				635AE14F1D3C6997004709C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635AE1611D3C727D004709C2 /* Currency.swift in Sources */,
 				635AE14C1D3C6997004709C2 /* ViewController.swift in Sources */,
+				635AE1661D3C84BD004709C2 /* RateConvertion.swift in Sources */,
 				635AE14A1D3C6997004709C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
