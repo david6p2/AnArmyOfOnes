@@ -6,6 +6,6 @@ It uses Alamofire for Networking and SwiftDate to manage dates when requesting c
 # Setup
 
 - Clone the repo
-- run "pod install" to download de Pods
+- run "pod install" to download the Pods
 - open the .xcworkspace file
 - build and run
