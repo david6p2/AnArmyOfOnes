@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         self.exchangeBttn.setBackgroundImage(blackAlphaColorImg(), forState: .Disabled)
         self.exchangeBttn.setBackgroundImage(hugeMagentaColorImg(), forState: .Highlighted)
         
-        //self.billsToExTxtFld.addTarget(self, action: "textFieldDidChange", forControlEvents: UIControlEvents.EditingChanged)
         self.billsToExTxtFld.delegate = self
     }
 
@@ -88,7 +87,7 @@ extension ViewController {
                 // 1.
                 guard response.result.isSuccess else {
                     print("Error while fetching rates: \(response.result.error)")
-                    //completion("")
+                    
                     return
                 }
                 
@@ -98,7 +97,6 @@ extension ViewController {
                     base = responseJSON["base"] as? String,
                     rates = responseJSON["rates"] as? [String: NSNumber] else {
                         print("Invalid rates information received from the service")
-                        //completion("")
                         return
                 }
                 
