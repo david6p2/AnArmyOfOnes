@@ -23,9 +23,8 @@ public enum FixerRouter: URLRequestConvertible {
                 return ("/latest", .GET, params)
             }
         }()
-        
-        let URL = NSURL(string: FixerRouter.baseURLPath)!
-        let URLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(result.path))
+        let url = NSURL(string: FixerRouter.baseURLPath)!
+        let URLRequest = NSMutableURLRequest(URL: url.URLByAppendingPathComponent(result.path))
         URLRequest.HTTPMethod = result.method.rawValue
         
         let encoding = Alamofire.ParameterEncoding.URL

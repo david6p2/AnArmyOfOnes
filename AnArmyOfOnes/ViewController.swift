@@ -52,12 +52,32 @@ class ViewController: UIViewController {
             self.activityIndicatorView.stopAnimating()
             print("The Rate Convertion is \(rate)")
             let rates = rate.rates
-            if let amountToExchange = float_t(self.billsToExTxtFld.text!){
-                self.GBPRateLbl.text = "\(amountToExchange*(rates["GBP"]?.floatValue)!)"
-                self.EURRateLbl.text = "\(amountToExchange*(rates["EUR"]?.floatValue)!)"
-                self.JPYRateLbl.text = "\(amountToExchange*(rates["JPY"]?.floatValue)!)"
-                self.BRLRateLbl.text = "\(amountToExchange*(rates["BRL"]?.floatValue)!)"
+            if let billsToExchangeText = self.billsToExTxtFld.text{
+                if let amountToExchange = float_t(billsToExchangeText){
+                    if let amountInGBP = rates["GBP"] {
+                        self.GBPRateLbl.text = "\(amountToExchange*(amountInGBP.floatValue))"
+                    }else{
+                        self.GBPRateLbl.text = "No info for GBP"
+                    }
+                    if let amountInEUR = rates["EUR"] {
+                        self.EURRateLbl.text = "\(amountToExchange*(amountInEUR.floatValue))"
+                    }else{
+                        self.EURRateLbl.text = "No info for EUR"
+                    }
+                    if let amountInJPY = rates["JPY"] {
+                        self.JPYRateLbl.text = "\(amountToExchange*(amountInJPY.floatValue))"
+                    }else{
+                        self.JPYRateLbl.text = "No info for JPY"
+                    }
+                    if let amountInBRL = rates["BRL"] {
+                        self.BRLRateLbl.text = "\(amountToExchange*(amountInBRL.floatValue))"
+                    }else{
+                        self.BRLRateLbl.text = "No info for BRL"
+                    }
+                }
+                
             }
+            
         }
     }
     
