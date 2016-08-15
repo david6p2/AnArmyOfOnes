@@ -24,10 +24,4 @@ struct Currency {
         
         return currencies
     }()
-    
-    // MARK: - Initializer
-    init(name: String, image: UIImage) {
-        self.name = name
-        self.image = image
-    }
 }
