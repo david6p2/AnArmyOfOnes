@@ -11,9 +11,9 @@ import Foundation
 struct RateConvertion {
     var date: String
     var base: String
-    var rates: [String: NSNumber]
+    var rates: [String: Float]
     
-    init(date: String, base: String, rates: [String: NSNumber]) {
+    init(date: String, base: String, rates: [String: Float]) {
         self.date = date
         self.base = base
         self.rates = rates

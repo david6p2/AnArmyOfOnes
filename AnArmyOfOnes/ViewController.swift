@@ -115,7 +115,7 @@ extension ViewController {
                 guard let responseJSON = response.result.value as? [String: AnyObject],
                     date = responseJSON["date"] as? String,
                     base = responseJSON["base"] as? String,
-                    rates = responseJSON["rates"] as? [String: NSNumber] else {
+                    rates = responseJSON["rates"] as? [String: Float] else {
                         print("Invalid rates information received from the service")
                         return
                 }
