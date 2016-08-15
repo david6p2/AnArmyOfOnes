@@ -55,22 +55,22 @@ class ViewController: UIViewController {
             if let billsToExchangeText = self.billsToExTxtFld.text{
                 if let amountToExchange = float_t(billsToExchangeText){
                     if let amountInGBP = rates["GBP"] {
-                        self.GBPRateLbl.text = "\(amountToExchange*(amountInGBP.floatValue))"
+                        self.GBPRateLbl.text = "\(amountToExchange*(amountInGBP))"
                     }else{
                         self.GBPRateLbl.text = "No info for GBP"
                     }
                     if let amountInEUR = rates["EUR"] {
-                        self.EURRateLbl.text = "\(amountToExchange*(amountInEUR.floatValue))"
+                        self.EURRateLbl.text = "\(amountToExchange*(amountInEUR))"
                     }else{
                         self.EURRateLbl.text = "No info for EUR"
                     }
                     if let amountInJPY = rates["JPY"] {
-                        self.JPYRateLbl.text = "\(amountToExchange*(amountInJPY.floatValue))"
+                        self.JPYRateLbl.text = "\(amountToExchange*(amountInJPY))"
                     }else{
                         self.JPYRateLbl.text = "No info for JPY"
                     }
                     if let amountInBRL = rates["BRL"] {
-                        self.BRLRateLbl.text = "\(amountToExchange*(amountInBRL.floatValue))"
+                        self.BRLRateLbl.text = "\(amountToExchange*(amountInBRL))"
                     }else{
                         self.BRLRateLbl.text = "No info for BRL"
                     }
