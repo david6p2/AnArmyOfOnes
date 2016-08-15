@@ -13,7 +13,7 @@ struct Currency {
     var name: String
     var image: UIImage
     
-    static var currencies: [Currency] = {
+    func currencies() -> [Currency]{
         var currencies = [Currency]()
         let currenciesNamesArray = ["BRL","EUR","GBP","JPY","USD"]
         
@@ -23,5 +23,5 @@ struct Currency {
         }
         
         return currencies
-    }()
+    }
 }

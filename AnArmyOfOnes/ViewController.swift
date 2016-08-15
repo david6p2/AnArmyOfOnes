@@ -29,8 +29,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let currencies = Currency.currencies
-        print("These are the currencies \(currencies)")
+        if let currencyImage = UIImage.init(named: "USD") {
+            let currency = Currency(name: "USD", image: currencyImage)
+            let currencies = Currency.currencies(currency)
+            print("These are the currencies \(currencies)")
+        }
+        
         
         self.exchangeBttn.setBackgroundImage(blackColorImg(), forState: .Normal)
         self.exchangeBttn.setBackgroundImage(blackAlphaColorImg(), forState: .Disabled)
