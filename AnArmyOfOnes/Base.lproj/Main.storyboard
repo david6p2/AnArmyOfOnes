@@ -41,13 +41,13 @@
                                     <constraint firstAttribute="width" constant="80" id="WXg-8D-07p"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many 1 US Dollar Bills do you want to exchange today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-YH-iua">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many 1 US Dollar Bills do you want to exchange today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-YH-iua">
                                 <rect key="frame" x="20" y="89" width="560" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KSB-c8-SN3"/>
                                     <constraint firstAttribute="width" constant="560" id="cmk-S5-MUg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Copernicus-Book" family="Copernicus" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Copernicus-Book" family="Copernicus" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -82,16 +82,16 @@
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ghx-WT-5sg"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l45-7a-MFJ">
-                                <rect key="frame" x="357" y="147" width="120" height="50"/>
+                                <rect key="frame" x="357" y="147" width="104" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JL5-ci-GWn"/>
-                                    <constraint firstAttribute="width" constant="120" id="uOq-Wb-qTf"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="uOq-Wb-qTf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HUGE-AvantGarde-Bold" family="HUGE Avant Garde" pointSize="18"/>
                                 <size key="titleShadowOffset" width="1" height="2"/>
@@ -101,7 +101,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="40X-h6-faU">
-                                <rect key="frame" x="399" y="154" width="37" height="37"/>
+                                <rect key="frame" x="391" y="154" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="a3Q-FP-IbM"/>
                                     <constraint firstAttribute="height" constant="37" id="bbz-hc-GrC"/>
