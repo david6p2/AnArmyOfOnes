@@ -181,5 +181,20 @@ extension ViewController : UITextFieldDelegate{
         self.exchangeMyMoney(self.exchangeBttn)
         return true
     }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        // allow backspace
+        if (string.characters.count < 1)
+        {
+            return true
+        }
+        if (string.rangeOfCharacterFromSet(NSCharacterSet.decimalDigitCharacterSet().invertedSet) != nil)
+        {
+            print("Try too enter \(string) that is not a number")
+            return false
+        }else{
+            return true
+        }
+    }
 }
 
